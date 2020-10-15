@@ -26,24 +26,7 @@ namespace MockIdentityServer
         {
             get
             {
-                var testUsers = new List<TestUser>
-                {
-                    new TestUser
-                    {
-                        SubjectId = "30136a4b-a0d0-48bf-af12-e023f30768b2",
-                        Username = "saracinori",
-                        Password = "password",
-                        //Enabled = true,
-                        Claims = new List<Claim>(new[]
-                        {
-                            new Claim(JwtClaimTypes.Subject, "30136a4b-a0d0-48bf-af12-e023f30768b2"),
-                            new Claim(JwtClaimTypes.Name, "SaracinoRi"),
-                            new Claim(JwtClaimTypes.GivenName, "Ricardo"),
-                            new Claim(JwtClaimTypes.FamilyName, "Saracino"),
-                            new Claim(JwtClaimTypes.Email, "ricardo.saracino@csc-scc.gc.ca")
-                        })
-                    },
-                };
+                var testUsers = new List<TestUser>();         
 
                 TestData.ForEach(d =>
                 {
